@@ -1,0 +1,127 @@
+<@OOO,1,frase_Brown>
+<@CCC>
+Man UH man NOSTEM
+<@ORL>
+<@VBC>
+sought VBN seek NOSTEM
+<@/VBC>
+<@SNS,compl,comun,,>
+<@NSN>
+Police NNS police NOSTEM
+<@/NSN>
+<@/SNS,compl,comun,,>
+<@/ORL>
+<@VBC>
+are VBPBE be NOSTEM
+seeking VBG seek NOSTEM
+<@/VBC>
+<@SNS,compl,comun,,>
+a DT a NOSTEM
+<@NSN>
+man NN man NOSTEM
+<@/NSN>
+<@/SNS,compl,comun,,>
+<@SPS>
+from IN from NOSTEM
+<@SNS,,propio,,>
+<@NSN>
+Aberdeen NP aberdeen NOSTEM
+<@/NSN>
+<@ORL>
+who WP who NOSTEM
+<@VBC>
+has VBZHV have NOSTEM
+gone VBN go NOSTEM
+missing VBG miss NOSTEM
+<@/VBC>
+<@SPS>
+in IN in NOSTEM
+<@SNS,,propio,,>
+<@NSN>
+Edinburgh NP edinburgh NOSTEM
+<@/NSN>
+<@/SNS,,propio,,>
+<@/SPS>
+<@/ORL>
+<@/SNS,,propio,,>
+<@/SPS>
+. SENT . NOSTEM
+<@/CCC>
+<@/OOO,1,frase_Brown>
+
+
+<@OOO,2,frase_Brown>
+<@CCC>
+<@SNS,compl,propio,,>
+<@NSN>
+Ramsay NP ramsay NOSTEM
+Pirie NP pirie NOSTEM
+<@/NSN>
+<@/SNS,compl,propio,,>
+, , , NOSTEM
+<@SNS,,numeral,,>
+60 CD 60 NOSTEM
+<@/SNS,,numeral,,>
+, , , NOSTEM
+<@ORL>
+<@VBC>
+disappeared VBN disappear NOSTEM
+<@/VBC>
+<@SPS>
+from IN from NOSTEM
+<@SNS,,comun,,>
+his POS3M his NOSTEM
+<@NSN>
+home NN home NOSTEM
+<@/NSN>
+<@SPS>
+on IN on NOSTEM
+<@SNS,,date,,>
+December NP december NOSTEM
+29 CD 29 NOSTEM
+<@/SNS,,date,,>
+<@/SPS>
+<@/SNS,,comun,,>
+<@/SPS>
+<@/ORL>
+, , , NOSTEM
+and CC and NOSTEM
+<@VBC>
+is VBZBE be NOSTEM
+known VBN know NOSTEM
+to TO to NOSTEM
+have VBHV have NOSTEM
+<@/VBC>
+<@ORL>
+<@VBC>
+travelled VBN travel NOSTEM
+<@/VBC>
+<@SPS>
+to TO to NOSTEM
+<@SNS,,propio,,>
+<@NSN>
+Edinburgh NP edinburgh NOSTEM
+<@/NSN>
+<@SPS>
+in IN in NOSTEM
+<@SNS,,propio,,>
+a DT a NOSTEM
+grey-green JJ grey-green NOSTEM
+<@NSN>
+Rover NP rover NOSTEM
+car NN car NOSTEM
+registration NN registration NOSTEM
+number NN number NOSTEM
+K136 NP k136 NOSTEM
+ESO NP eso NOSTEM
+<@/NSN>
+<@/SNS,,propio,,>
+<@/SPS>
+<@/SNS,,propio,,>
+<@/SPS>
+<@/ORL>
+. SENT . NOSTEM
+<@/CCC>
+<@/OOO,2,frase_Brown>
+
+

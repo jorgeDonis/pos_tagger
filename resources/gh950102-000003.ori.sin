@@ -1,0 +1,978 @@
+<@OOO,1,frase_Brown>
+<@CCC>
+<@SNS,suj,propio,,>
+<@NSN>
+Neil NP neil NOSTEM
+<@/NSN>
+<@/SNS,suj,propio,,>
+<@VBC>
+is VBZBE be NOSTEM
+<@/VBC>
+<@/CCC>
+<@CCC>
+<@SNS,suj,comun,,>
+a DT a NOSTEM
+fair JJ fair NOSTEM
+<@NSN>
+choice NN choice NOSTEM
+<@/NSN>
+<@SPS>
+for IN for NOSTEM
+<@SNS,,propio,,>
+<@NSN>
+tour NN tour NOSTEM
+NEIL NP neil NOSTEM
+Fairbrother NP fairbrother NOSTEM
+<@/NSN>
+<@/SNS,,propio,,>
+<@/SPS>
+<@/SNS,suj,comun,,>
+<@VBC>
+was VBDBE be NOSTEM
+yesterday RB yesterday NOSTEM
+confirmed VBN confirm NOSTEM
+<@/VBC>
+<@SPS>
+as IN as NOSTEM
+<@SNS,,comun,,>
+the DT the NOSTEM
+latest JJS late NOSTEM
+<@NSN>
+recruit NN recruit NOSTEM
+<@/NSN>
+<@SPS>
+to TO to NOSTEM
+<@SNS,,comun,personaOAnimal,>
+<@NSN>
+England NP england NOSTEM
+<@/NSN>
+<@GSJ>
+s POS s NOSTEM
+accident-prone JJ accident-prone NOSTEM
+<@NSN>
+Ashes NNS ash NOSTEM
+tour NN tour NOSTEM
+<@/NSN>
+<@/GSJ>
+<@/SNS,,comun,personaOAnimal,>
+<@/SPS>
+<@/SNS,,comun,,>
+<@/SPS>
+. SENT . NOSTEM
+<@/CCC>
+<@/OOO,1,frase_Brown>
+
+
+<@OOO,2,frase_Brown>
+<@CCC>
+<@SNS,suj,comun,,>
+The DT the NOSTEM
+<@NSN>
+Lancashire NP lancashire NOSTEM
+batsman NN batsman NOSTEM
+<@/NSN>
+<@/SNS,suj,comun,,>
+<@VBC>
+will MD will NOSTEM
+arrive VB arrive NOSTEM
+<@/VBC>
+<@SPS>
+in IN in NOSTEM
+<@SNS,,propio,,>
+<@NSN>
+Australia NP australia NOSTEM
+<@/NSN>
+<@SPS>
+on IN on NOSTEM
+<@SNS,,day,,>
+Thursday NP thursday NOSTEM
+<@/SNS,,day,,>
+<@/SPS>
+<@/SNS,,propio,,>
+<@/SPS>
+<@/CCC>
+<@CCC>
+and CC and NOSTEM
+<@VBC>
+could MD could NOSTEM
+be VBBE be NOSTEM
+considered VBN consider NOSTEM
+<@/VBC>
+<@SPS>
+for IN for NOSTEM
+<@SNS,,comun,personaOAnimal,>
+next JJ next NOSTEM
+<@NSN>
+weekend NN weekend NOSTEM
+<@/NSN>
+<@GSJ>
+s POS s NOSTEM
+<@NSN>
+World NP world NOSTEM
+Series NP series NOSTEM
+Cup NP cup NOSTEM
+match NN match NOSTEM
+<@/NSN>
+<@/GSJ>
+<@SPS>
+against IN against NOSTEM
+<@SNS,,propio,,>
+<@NSN>
+Zimbabwe NP zimbabwe NOSTEM
+<@/NSN>
+<@/SNS,,propio,,>
+<@/SPS>
+<@/SNS,,comun,personaOAnimal,>
+<@/SPS>
+. SENT . NOSTEM
+<@/CCC>
+<@/OOO,2,frase_Brown>
+
+
+<@OOO,3,frase_Brown>
+<@CCC>
+<@SNS,suj,propio,,>
+<@NSN>
+Fairbrother NP fairbrother NOSTEM
+<@/NSN>
+<@/SNS,suj,propio,,>
+<@VBC>
+has VBZHV have NOSTEM
+been VBNBE be NOSTEM
+<@/VBC>
+<@SNS,compl,comun,,>
+a DT a NOSTEM
+key JJ key NOSTEM
+<@NSN>
+member NN member NOSTEM
+<@/NSN>
+<@SPS>
+of OF of NOSTEM
+<@SNS,,comun,personaOAnimal,>
+<@NSN>
+England NP england NOSTEM
+<@/NSN>
+<@GSJ>
+s POS s NOSTEM
+one-day JJ one-day NOSTEM
+<@NSN>
+side NN side NOSTEM
+<@/NSN>
+<@/GSJ>
+<@SPS>
+for IN for NOSTEM
+<@SNS,,comun,tiempo,>
+several JJ several NOSTEM
+<@NSN>
+years NNS year NOSTEM
+<@/NSN>
+<@/SNS,,comun,tiempo,>
+<@/SPS>
+<@/SNS,,comun,personaOAnimal,>
+<@/SPS>
+<@/SNS,compl,comun,,>
+<@/CCC>
+<@CCC>
+and CC and NOSTEM
+<@VBC>
+was VBDBE be NOSTEM
+<@/VBC>
+<@SNS,compl,adj,,>
+close JJ close NOSTEM
+<@ORL>
+to TO to NOSTEM
+<@VBC>
+making VBG make NOSTEM
+<@/VBC>
+<@SNS,compl,comun,,>
+the DT the NOSTEM
+original JJ original NOSTEM
+<@NSN>
+party NN party NOSTEM
+<@/NSN>
+<@SPS>
+for IN for NOSTEM
+<@SNS,,comun,,>
+this DT this NOSTEM
+<@NSN>
+tour NN tour NOSTEM
+<@/NSN>
+<@/SNS,,comun,,>
+<@/SPS>
+<@/SNS,compl,comun,,>
+<@/ORL>
+<@/SNS,compl,adj,,>
+. SENT . NOSTEM
+<@/CCC>
+<@/OOO,3,frase_Brown>
+
+
+<@OOO,4,frase_Brown>
+<@CCC>
+Now RB now NOSTEM
+, , , NOSTEM
+despite IN despite NOSTEM
+not NOT not NOSTEM
+<@ORL>
+<@VBC>
+having VBGHV have NOSTEM
+played VBN play NOSTEM
+<@/VBC>
+<@SNS,compl,comun,,>
+a DT a NOSTEM
+<@NSN>
+Test NN test NOSTEM
+<@/NSN>
+<@/SNS,compl,comun,,>
+<@SPS>
+since IN since NOSTEM
+<@SNS,,numeral,,>
+1993 CD 1993 NOSTEM
+<@/SNS,,numeral,,>
+<@/SPS>
+<@/ORL>
+, , , NOSTEM
+<@SNS,suj,comun,,>
+the DT the NOSTEM
+31-year-old JJ 31-year-old NOSTEM
+<@NSN>
+left-hander NN left-hander NOSTEM
+<@/NSN>
+<@/SNS,suj,comun,,>
+<@VBC>
+might MD might NOSTEM
+still RB still NOSTEM
+force VB force NOSTEM
+<@/VBC>
+<@SNS,compl,comun,,>
+his POS3M his NOSTEM
+<@NSN>
+way NN way NOSTEM
+<@/NSN>
+<@SPS>
+into IN into NOSTEM
+<@SNS,,comun,,>
+<@NSN>
+Ashes NNS ash NOSTEM
+<@/NSN>
+<@ORL>
+<@VBC>
+reckoning VBG reckon NOSTEM
+<@/VBC>
+<@/ORL>
+<@/SNS,,comun,,>
+<@/SPS>
+<@/SNS,compl,comun,,>
+. SENT . NOSTEM
+<@/CCC>
+<@/OOO,4,frase_Brown>
+
+
+<@OOO,5,frase_Brown>
+<@CCC>
+<@SNC,suj,propio,,>
+<@SNS,suj,propio,,>
+<@NSN>
+Mike NP mike NOSTEM
+Gatting NP gatting NOSTEM
+<@/NSN>
+<@/SNS,suj,propio,,>
+and CC and NOSTEM
+<@SNS,suj,propio,,>
+<@NSN>
+Graham NP graham NOSTEM
+Gooch NP gooch NOSTEM
+<@/NSN>
+<@/SNS,suj,propio,,>
+<@/SNC,suj,propio,,>
+<@VBC>
+are VBPBE be NOSTEM
+<@/VBC>
+both PDT both NOSTEM
+badly RB badly NOSTEM
+out RP out NOSTEM
+<@SPS>
+of OF of NOSTEM
+<@SNS,,comun,,>
+<@NSN>
+form NN form NOSTEM
+<@/NSN>
+<@/SNS,,comun,,>
+<@/SPS>
+<@/CCC>
+<@CCC>
+while IN while NOSTEM
+<@SNS,suj,propio,,>
+<@NSN>
+Alec NP alec NOSTEM
+Stewart NP stewart NOSTEM
+<@/NSN>
+<@/SNS,suj,propio,,>
+<@VBC>
+is VBZBE be NOSTEM
+nursing VBG nurse NOSTEM
+<@/VBC>
+<@SNS,compl,comun,,>
+a DT a NOSTEM
+broken JJ broken NOSTEM
+<@NSN>
+index NN index NOSTEM
+finger NN finger NOSTEM
+<@/NSN>
+<@/SNS,compl,comun,,>
+. SENT . NOSTEM
+<@/CCC>
+<@/OOO,5,frase_Brown>
+
+
+<@OOO,6,frase_Brown>
+<@CCC>
+<@SNS,suj,comun,personaOAnimal,>
+<@NSN>
+Fairbrother NP fairbrother NOSTEM
+<@/NSN>
+<@GSJ>
+s POS s NOSTEM
+<@NSN>
+arrival NN arrival NOSTEM
+<@/NSN>
+<@/GSJ>
+<@/SNS,suj,comun,personaOAnimal,>
+<@VBC>
+seems VBZ seem NOSTEM
+<@/VBC>
+<@SNS,compl,adj,,>
+certain JJ certain NOSTEM
+<@/SNS,compl,adj,,>
+<@ORL>
+to TO to NOSTEM
+<@VBC>
+coincide VB coincide NOSTEM
+<@/VBC>
+<@SPS>
+with IN with NOSTEM
+<@SNS,,comun,,>
+the DT the NOSTEM
+<@NSN>
+departure NN departure NOSTEM
+<@/NSN>
+<@SPS>
+of OF of NOSTEM
+<@SNS,,propio,,>
+<@NSN>
+Yorkshire NP yorkshire NOSTEM
+all-rounder NN all-rounder NOSTEM
+Craig NP craig NOSTEM
+White NP white NOSTEM
+<@/NSN>
+<@/SNS,,propio,,>
+<@/SPS>
+<@/SNS,,comun,,>
+<@/SPS>
+<@/ORL>
+, , , NOSTEM
+<@ORL>
+who WP who NOSTEM
+<@VBC>
+has VBZHV have NOSTEM
+made VBN make NOSTEM
+<@/VBC>
+<@SNS,compl,comun,,>
+no DT no NOSTEM
+<@NSN>
+improvement NN improvement NOSTEM
+<@/NSN>
+<@ORL>
+since IN since NOSTEM
+<@VBC>
+tearing VBG tear NOSTEM
+<@/VBC>
+<@SNS,compl,comun,,>
+an DT an NOSTEM
+abdominal JJ abdominal NOSTEM
+<@NSN>
+muscle NN muscle NOSTEM
+<@/NSN>
+<@SPS>
+on IN on NOSTEM
+<@SNS,,date,,>
+December NP december NOSTEM
+13 CD 13 NOSTEM
+<@/SNS,,date,,>
+<@/SPS>
+<@/SNS,compl,comun,,>
+<@/ORL>
+<@/SNS,compl,comun,,>
+<@/ORL>
+. SENT . NOSTEM
+<@/CCC>
+<@/OOO,6,frase_Brown>
+
+
+<@OOO,7,frase_Brown>
+<@CCC>
+" " " NOSTEM
+" " " NOSTEM
+<@SNS,suj,pronEnglish,,>
+It PPH1P1 it NOSTEM
+<@/SNS,suj,pronEnglish,,>
+<@VBC>
+be|have VBZ be|have NOSTEM
+going VBG go NOSTEM
+<@/VBC>
+<@ORL>
+to TO to NOSTEM
+<@VBC>
+take VB take NOSTEM
+<@/VBC>
+<@SNS,compl,comun,tiempo,>
+a DT a NOSTEM
+<@NSN>
+month NN month NOSTEM
+<@/NSN>
+<@SPS>
+for IN for NOSTEM
+<@SNS,,propio,,>
+<@NSN>
+Craig NP craig NOSTEM
+<@/NSN>
+<@/SNS,,propio,,>
+<@/SPS>
+<@/SNS,compl,comun,tiempo,>
+<@/ORL>
+<@ORL>
+to TO to NOSTEM
+<@VBC>
+recover VB recover NOSTEM
+<@/VBC>
+<@/ORL>
+<@/CCC>
+<@CCC>
+, , , NOSTEM
+" " " NOSTEM
+" " " NOSTEM
+<@VBC>
+said VBD say NOSTEM
+<@/VBC>
+<@SNS,compl,propio,,>
+<@NSN>
+manager NN manager NOSTEM
+Keith NP keith NOSTEM
+Fletcher NP fletcher NOSTEM
+<@/NSN>
+<@/SNS,compl,propio,,>
+. SENT . NOSTEM
+<@/CCC>
+<@/OOO,7,frase_Brown>
+
+
+<@OOO,8,frase_Brown>
+<@CCC>
+<@SNS,suj,propio,,>
+<@NSN>
+England NP england NOSTEM
+<@/NSN>
+<@/SNS,suj,propio,,>
+<@VBC>
+have VBPHV have NOSTEM
+already RB already NOSTEM
+said VBN say NOSTEM
+<@/VBC>
+<@SNS,compl,comun,,>
+<@NSN>
+goodbye NN goodbye NOSTEM
+<@/NSN>
+<@SPS>
+to TO to NOSTEM
+<@SNS,,propio,,>
+<@NSN>
+Kent NP kent NOSTEM
+<@/NSN>
+fast JJ fast NOSTEM
+<@/SNS,,propio,,>
+<@/SPS>
+<@/SNS,compl,comun,,>
+<@SNS,compl,propio,,>
+<@NSN>
+bowler NN bowler NOSTEM
+Martin NP martin NOSTEM
+McCague NP mccague NOSTEM
+<@/NSN>
+<@APO>
+( ( ( NOSTEM
+<@SNS,modSN,comun,,>
+<@NSN>
+shin NN shin NOSTEM
+stress NN stress NOSTEM
+fracture NN fracture NOSTEM
+<@/NSN>
+<@/SNS,modSN,comun,,>
+) ) ) NOSTEM
+<@/APO>
+<@/SNS,compl,propio,,>
+<@SNS,compl,comun,,>
+this DT this NOSTEM
+<@NSN>
+tour NN tour NOSTEM
+<@/NSN>
+<@/SNS,compl,comun,,>
+. SENT . NOSTEM
+<@/CCC>
+<@/OOO,8,frase_Brown>
+
+
+<@OOO,9,frase_Brown>
+<@CCC>
+<@SNS,suj,pronEnglish,,>
+He PPHS1M he NOSTEM
+<@/SNS,suj,pronEnglish,,>
+<@VBC>
+was VBDBE be NOSTEM
+replaced VBN replace NOSTEM
+<@/VBC>
+<@SPS>
+by IN by NOSTEM
+<@SNS,suj,propio,,>
+<@NSN>
+Angus NP angus NOSTEM
+Fraser NP fraser NOSTEM
+<@/NSN>
+<@/SNS,suj,propio,,>
+<@/SPS>
+-- : -- NOSTEM
+<@SNS,compl,adj,,>
+the DT the NOSTEM
+first JJ first NOSTEM
+<@SPS>
+of OF of NOSTEM
+<@SNS,,comun,,>
+four CD four NOSTEM
+<@NSN>
+additions NNS addition NOSTEM
+<@/NSN>
+<@SPS>
+to TO to NOSTEM
+<@SNS,,comun,,>
+the DT the NOSTEM
+<@NSN>
+party NN party NOSTEM
+<@/NSN>
+<@/SNS,,comun,,>
+<@/SPS>
+<@/SNS,,comun,,>
+<@/SPS>
+<@/SNS,compl,adj,,>
+. SENT . NOSTEM
+<@/CCC>
+<@/OOO,9,frase_Brown>
+
+
+<@OOO,10,frase_Brown>
+<@CCC>
+<@SNS,suj,propio,,>
+<@NSN>
+Paceman NP paceman NOSTEM
+Mark NP mark NOSTEM
+Ilott NP ilott NOSTEM
+<@/NSN>
+<@/SNS,suj,propio,,>
+<@VBC>
+arrived VBD arrive NOSTEM
+<@/VBC>
+<@SPS>
+before IN before NOSTEM
+<@SNS,,propio,,>
+<@NSN>
+Christmas NP christmas NOSTEM
+<@/NSN>
+<@/SNS,,propio,,>
+<@/SPS>
+as RB as NOSTEM
+<@/CCC>
+<@CCC>
+<@VBC>
+cover VB cover NOSTEM
+when WRB when NOSTEM
+<@/VBC>
+<@/CCC>
+<@CCC>
+<@SNS,suj,comun,,>
+the DT the NOSTEM
+<@NSN>
+injury NN injury NOSTEM
+crisis NN crisis NOSTEM
+<@/NSN>
+<@/SNS,suj,comun,,>
+<@VBC>
+was VBDBE be NOSTEM
+<@/VBC>
+<@SPS>
+at IN at NOSTEM
+<@SNS,,comun,,>
+its POS3N its NOSTEM
+<@NSN>
+height NN height NOSTEM
+<@/NSN>
+<@/SNS,,comun,,>
+<@/SPS>
+. SENT . NOSTEM
+<@/CCC>
+<@/OOO,10,frase_Brown>
+
+
+<@OOO,11,frase_Brown>
+<@CCC>
+<@SNS,suj,pronEnglish,,>
+He PPHS1M he NOSTEM
+<@/SNS,suj,pronEnglish,,>
+<@VBC>
+will MD will NOSTEM
+be VBBE be NOSTEM
+released VBN release NOSTEM
+to TO to NOSTEM
+join VB join NOSTEM
+<@/VBC>
+the DT the NOSTEM
+<@SNS,compl,comun,,>
+A DT a NOSTEM
+<@NSN>
+side NN side NOSTEM
+<@/NSN>
+<@SPS>
+in IN in NOSTEM
+<@SNS,,propio,,>
+<@NSN>
+India NP india NOSTEM
+<@/NSN>
+<@/SNS,,propio,,>
+<@/SPS>
+<@/SNS,compl,comun,,>
+<@SNS,compl,comun,tiempo,>
+this DT this NOSTEM
+<@NSN>
+week NN week NOSTEM
+<@/NSN>
+<@/SNS,compl,comun,tiempo,>
+<@/CCC>
+<@CCC>
+but CC but NOSTEM
+<@SNS,suj,propio,,>
+new JJ new NOSTEM
+<@NSN>
+arrival NN arrival NOSTEM
+Jack NP jack NOSTEM
+Russell NP russell NOSTEM
+<@/NSN>
+<@/SNS,suj,propio,,>
+<@VBC>
+is VBZBE be NOSTEM
+staying VBG stay NOSTEM
+<@/VBC>
+<@SPS>
+for IN for NOSTEM
+<@SNS,,comun,,>
+the DT the NOSTEM
+<@NSN>
+remainder NN remainder NOSTEM
+<@/NSN>
+<@SPS>
+of OF of NOSTEM
+<@SNS,,comun,,>
+the DT the NOSTEM
+<@NSN>
+trip NN trip NOSTEM
+<@/NSN>
+<@ORL>
+as IN as NOSTEM
+<@VBC>
+wicketkeeping VBG wicketkeeping NOSTEM
+<@/VBC>
+<@SNS,,comun,,>
+<@NSN>
+back-up NN back-up NOSTEM
+<@/NSN>
+<@SPS>
+to TO to NOSTEM
+<@SNS,,propio,,>
+<@NSN>
+Steve NP steve NOSTEM
+Rhodes NP rhodes NOSTEM
+<@/NSN>
+<@/SNS,,propio,,>
+<@/SPS>
+<@/SNS,,comun,,>
+<@/ORL>
+<@/SNS,,comun,,>
+<@/SPS>
+<@/SNS,,comun,,>
+<@/SPS>
+. SENT . NOSTEM
+<@/CCC>
+<@/OOO,11,frase_Brown>
+
+
+<@OOO,12,frase_Brown>
+<@CCC>
+<@SNS,suj,comun,personaOAnimal,>
+<@NSN>
+England NP england NOSTEM
+<@/NSN>
+<@GSJ>
+s POS s NOSTEM
+latest JJS late NOSTEM
+<@NSN>
+injury NN injury NOSTEM
+problem NN problem NOSTEM
+<@/NSN>
+<@/GSJ>
+<@/SNS,suj,comun,personaOAnimal,>
+<@VBC>
+saw VBD see NOSTEM
+<@/VBC>
+<@/CCC>
+<@CCC>
+<@SNS,suj,propio,,>
+<@NSN>
+Phillip NP phillip NOSTEM
+DeFreitas NP defreitas NOSTEM
+<@/NSN>
+<@/SNS,suj,propio,,>
+<@VBC>
+pull VBP pull NOSTEM
+out RP out NOSTEM
+<@/VBC>
+<@SPS>
+of OF of NOSTEM
+<@SNS,,comun,tiempo,>
+the DT the NOSTEM
+third JJ third NOSTEM
+<@NSN>
+Test NN test NOSTEM
+yesterday NN yesterday NOSTEM
+<@/NSN>
+<@SPS>
+with IN with NOSTEM
+<@SNS,,comun,,>
+a DT a NOSTEM
+<@NSN>
+hamstring NN hamstring NOSTEM
+strain NN strain NOSTEM
+<@/NSN>
+<@/SNS,,comun,,>
+<@/SPS>
+<@/SNS,,comun,tiempo,>
+<@/SPS>
+. SENT . NOSTEM
+<@/CCC>
+<@/OOO,12,frase_Brown>
+
+
+<@OOO,13,frase_Brown>
+<@CCC>
+But CC but NOSTEM
+no RB no NOSTEM
+<@VBC>
+matter VB matter NOSTEM
+<@/VBC>
+<@ORL>
+what WP what NOSTEM
+<@SNS,suj,comun,,>
+<@NSN>
+side NN side NOSTEM
+<@/NSN>
+<@/SNS,suj,comun,,>
+<@VBC>
+takes VBZ take NOSTEM
+<@/VBC>
+<@SNS,compl,comun,,>
+the DT the NOSTEM
+<@NSN>
+field NN field NOSTEM
+<@/NSN>
+<@/SNS,compl,comun,,>
+<@/ORL>
+<@/CCC>
+<@CCC>
+, , , NOSTEM
+<@SNS,suj,comun,,>
+<@NSN>
+performances NNS performance NOSTEM
+<@/NSN>
+<@/SNS,suj,comun,,>
+<@VBC>
+remain VBP remain NOSTEM
+depressingly RB depressingly NOSTEM
+<@/VBC>
+<@SNS,compl,adj,,>
+similar JJ similar NOSTEM
+<@/SNS,compl,adj,,>
+. SENT . NOSTEM
+<@/CCC>
+<@/OOO,13,frase_Brown>
+
+
+<@OOO,14,frase_Brown>
+<@CCC>
+<@SNS,suj,propio,,>
+<@NSN>
+Captain NP captain NOSTEM
+Mike NP mike NOSTEM
+Atherton NP atherton NOSTEM
+<@/NSN>
+<@/SNS,suj,propio,,>
+<@VBC>
+responded VBD respond NOSTEM
+<@/VBC>
+<@SPS>
+to TO to NOSTEM
+<@SNS,,comun,personaOAnimal,>
+last JJ last NOSTEM
+<@NSN>
+week NN week NOSTEM
+<@/NSN>
+<@GSJ>
+s POS s NOSTEM
+second JJ second NOSTEM
+<@NSN>
+Test NN test NOSTEM
+hammering NN hammering NOSTEM
+<@/NSN>
+<@/GSJ>
+<@SPS>
+in IN in NOSTEM
+<@SNS,,propio,,>
+<@NSN>
+Melbourne NP melbourne NOSTEM
+<@/NSN>
+<@/SNS,,propio,,>
+<@/SPS>
+<@/SNS,,comun,personaOAnimal,>
+<@/SPS>
+<@/CCC>
+<@CCC>
+-- : -- NOSTEM
+and CC and NOSTEM
+<@SNS,suj,comun,,>
+<@NSN>
+criticism NN criticism NOSTEM
+<@/NSN>
+<@SPS>
+of OF of NOSTEM
+<@SNS,,comun,,>
+his POS3M his NOSTEM
+<@NSN>
+leadership NN leadership NOSTEM
+<@/NSN>
+<@/SNS,,comun,,>
+<@/SPS>
+<@/SNS,suj,comun,,>
+-- : -- NOSTEM
+<@ORL>
+by IN by NOSTEM
+<@VBC>
+scoring VBG score NOSTEM
+<@/VBC>
+<@SNS,compl,adj,,>
+a DT a NOSTEM
+brave JJ brave NOSTEM
+88 CD 88 NOSTEM
+<@/SNS,compl,adj,,>
+<@/ORL>
+, , , NOSTEM
+but CC but NOSTEM
+neither RB neither NOSTEM
+that CC that NOSTEM
+<@SNS,suj,comun,,>
+<@NSN>
+knock NN knock NOSTEM
+<@/NSN>
+<@/SNS,suj,comun,,>
+nor CC nor NOSTEM
+<@SNS,suj,comun,personaOAnimal,>
+<@NSN>
+John NP john NOSTEM
+Crawley NP crawley NOSTEM
+<@/NSN>
+<@GSJ>
+s POS s NOSTEM
+first JJ first NOSTEM
+<@NSN>
+half-century NN half-century NOSTEM
+<@/NSN>
+<@/GSJ>
+<@/SNS,suj,comun,personaOAnimal,>
+<@VBC>
+could MD could NOSTEM
+prevent VB prevent NOSTEM
+<@/VBC>
+<@SNS,compl,propio,,>
+<@NSN>
+England NP england NOSTEM
+<@/NSN>
+<@ORL>
+from IN from NOSTEM
+<@VBC>
+sliding VBG slide NOSTEM
+<@/VBC>
+<@SPS>
+to TO to NOSTEM
+<@SNS,,numeral,,>
+198 CD 198 NOSTEM
+<@SPS>
+for IN for NOSTEM
+<@SNS,,numeral,,>
+seven CD seven NOSTEM
+<@SPS>
+on IN on NOSTEM
+<@SNS,,comun,tiempo,>
+the DT the NOSTEM
+<@NSN>
+opening NN opening NOSTEM
+day NN day NOSTEM
+<@/NSN>
+<@/SNS,,comun,tiempo,>
+<@/SPS>
+<@/SNS,,numeral,,>
+<@/SPS>
+<@/SNS,,numeral,,>
+<@/SPS>
+<@/ORL>
+<@/SNS,compl,propio,,>
+. SENT . NOSTEM
+<@/CCC>
+<@/OOO,14,frase_Brown>
+
+
+<@OOO,15,frase_Brown>
+<@CCC>
+* SYM * NOSTEM
+<@SNS,suj,propio,,>
+<@NSN>
+McDermott NP mcdermott NOSTEM
+<@/NSN>
+<@/SNS,suj,propio,,>
+<@VBC>
+rises VBZ rise NOSTEM
+<@/VBC>
+<@SPS>
+to TO to NOSTEM
+<@SNS,,comun,,>
+the DT the NOSTEM
+<@NSN>
+occasion NN occasion NOSTEM
+<@/NSN>
+<@/SNS,,comun,,>
+<@/SPS>
+-- : -- NOSTEM
+<@SNS,compl,propio,,>
+<@NSN>
+Page NP page NOSTEM
+<@/NSN>
+<@/SNS,compl,propio,,>
+<@SNS,,numeral,,>
+11 CD 11 NOSTEM
+<@/SNS,,numeral,,>
+<@/CCC>
+<@/OOO,15,frase_Brown>
+
+
