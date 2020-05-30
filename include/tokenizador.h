@@ -56,6 +56,7 @@ class Tokenizador
         }
         char* TokenizarFichero(const std::string&);
         char* TokenizarString(const std::string&);
+        void TokenizarString(const std::string&, std::list<std::string>&);
 };
 
 enum Estados {_default, URL, decimal, email, acronimo, multipalabra, pctg, dollar};

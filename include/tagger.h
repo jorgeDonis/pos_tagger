@@ -1,10 +1,12 @@
 #pragma once
 
 #include "mapa_memoria.h"
+#include "lattice.h"
 
 #include <vector>
 #include <unordered_map>
 #include <string>
+#include <list>
 
 class ParejaString
 {
@@ -60,9 +62,12 @@ class Tagger
         std::unordered_map<ParejaString, size_t, Hasher> observed_f;
         std::unordered_map<std::string, size_t, Hasher> tag_prev_f;
         std::unordered_map<std::string, size_t, Hasher> tag_total_f;
+        void lattice_ini(Lattice&, std::list<std::string>::const_iterator&);
+        void lattice_fill(Lattice &, std::list<std::string>::const_iterator &);
         void calcular_matrices();
         void calcular_frecuencias(const std::string&, const unsigned int&);
         void registrar_token(const unsigned&, const unsigned&, const unsigned&, const MapaMemoria&, std::string&);
     public:
         void entrenar(const std::string&, const unsigned int& = 100);
+        void etiquetar(const std::list<std::string> &, std::list<std::string>&);
 };

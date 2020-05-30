@@ -567,3 +567,21 @@ inline void Tokenizador::Tokenizar_fichero_simple(const char* mapa_entrada, char
     }
     mapa_salida[it_salida] = '\0';
 }
+
+void Tokenizador::TokenizarString(const string & cadena, list<string>& tokens)
+{
+    char* cadena_tokens = TokenizarString(cadena);
+    size_t it = 0;
+    while (cadena_tokens[it] != '\000')
+    {
+        string token = "";
+        while ((unsigned char) cadena_tokens[it] != 30)
+        {
+            token += cadena_tokens[it];
+            it++;
+        }
+        tokens.push_back(token);
+        it++;
+    }
+    free(cadena_tokens);
+}

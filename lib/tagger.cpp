@@ -1,4 +1,5 @@
 #include "tagger.h"
+
 #include <iostream>
 
 using namespace std;
@@ -24,7 +25,21 @@ void Tagger::calcular_matrices()
         A[pareja_tags.first] = (double) pareja_tags.second / tag_prev_f[pareja_tags.first.izquierda];
     for (const auto& pareja_etiquetada : observed_f)
         B[pareja_etiquetada.first] = (double) pareja_etiquetada.second / tag_total_f[pareja_etiquetada.first.derecha];
-    
+
+    // for (const auto& tag : tag_total_f)
+    // {
+    //     for (const auto& pareja : A)
+    //     {
+    //         if (pareja.first.izquierda == tag.first)
+    //             cout << pareja.first.izquierda << " => " << pareja.first.derecha << " = " << pareja.second <<  endl;
+    //     }
+    // }
+
+    // for (const auto &pareja : A)
+    // {
+    //     if (pareja.first.izquierda == "inicio")
+    //         cout << pareja.first.izquierda << " => " << pareja.first.derecha << " = " << pareja.second << endl;
+    // }
 }
 
 /**
@@ -80,4 +95,77 @@ void Tagger::registrar_token(const unsigned & izquierda, const unsigned & medio,
     observed_f[pareja_token_etiquetado]++;
     tag_total_f[tag]++;
     tag_prev = tag;
+}
+
+void Tagger::lattice_ini(Lattice& lattice, list<string>::const_iterator& it_oracion)
+{
+    unsigned i = 0;
+    for (const auto &tag : tag_total_f)
+    {
+        double f1 = A[ParejaString("inicio", tag.first)];
+        double f2 = B[ParejaString(*it_oracion, tag.first)];
+        lattice.getNodo(i, 0).p = f1 * f2;
+        lattice.getNodo(i, 0).tag = tag.first;
+        i++;
+    }
+    it_oracion++;
+}
+
+void Tagger::lattice_fill(Lattice &lattice, list<string>::const_iterator &it_oracion)
+{
+    for (unsigned j = 1; j < lattice.cols; j++)
+    {
+        unsigned i = 0;
+        for (const auto &tag : tag_total_f)
+        {
+            NodoViterbi *prev_max = &lattice.getNodo(i, j - 1);
+            double max_p = 0;
+            unsigned k = 0;
+            for (const auto &prev_tag : tag_total_f)
+            {
+                double f1 = lattice.getNodo(k, j - 1).p;
+                double f2 = A[ParejaString(prev_tag.first, tag.first)];
+                double prev_p = f1 * f2;
+                if (prev_p > max_p)
+                {
+                    max_p = prev_p;
+                    prev_max = &lattice.getNodo(k, j - 1);
+                }
+                k++;
+            }
+            double f = B[ParejaString(*it_oracion, tag.first)];
+            lattice.getNodo(i, j).p = max_p * f;
+            lattice.getNodo(i, j).puntero_prev = prev_max;
+            lattice.getNodo(i, j).tag = tag.first;
+            i++;
+        }
+        it_oracion++;
+    }
+}
+
+void Tagger::etiquetar(const std::list<std::string> &oracion, std::list<std::string> &predicted_tags)
+{
+    if (oracion.size() < 2)
+        cerr << "ERROR: La oración ha de contener al menos un bigrama" << endl;
+    list<string>::const_iterator it_oracion = oracion.begin();
+    Lattice lattice(tag_total_f.size(), oracion.size());
+    lattice_ini(lattice, it_oracion);
+    lattice_fill(lattice, it_oracion);
+
+    NodoViterbi* nodo_ptr = &lattice.getNodo(0, lattice.cols - 1);
+    double max_p = 0;
+    for (unsigned i = 0; i < lattice.rows; i++)
+    {
+        double p = lattice.getNodo(i, lattice.cols - 1).p;
+        if (p > max_p)
+        {
+            max_p = p;
+            nodo_ptr = &lattice.getNodo(i, lattice.cols - 1);
+        }
+    }
+    while (nodo_ptr != nullptr)
+    {
+        predicted_tags.push_front(nodo_ptr->tag);
+        nodo_ptr = nodo_ptr->puntero_prev;
+    }
 }
