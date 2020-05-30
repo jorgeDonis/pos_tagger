@@ -15,6 +15,10 @@ class ParejaString
             izquierda = a;
             derecha = b;
         }
+        ParejaString(const ParejaString& foo) {
+            izquierda = foo.izquierda;
+            derecha = foo.derecha;
+        }
         bool operator==(const ParejaString& foo) const {
             return (izquierda == foo.izquierda && derecha == foo.derecha);
         }
@@ -54,8 +58,8 @@ class Tagger
         std::unordered_map<ParejaString, float, Hasher> B;
         std::unordered_map<ParejaString, size_t, Hasher> transition_f;
         std::unordered_map<ParejaString, size_t, Hasher> observed_f;
-        std::unordered_map<std::string, size_t> tag_prev_f;
-        std::unordered_map<std::string, size_t> tag_total_f;
+        std::unordered_map<std::string, size_t, Hasher> tag_prev_f;
+        std::unordered_map<std::string, size_t, Hasher> tag_total_f;
         void calcular_matrices();
         void calcular_frecuencias(const std::string&, const unsigned int&);
         void registrar_token(const unsigned&, const unsigned&, const unsigned&, const MapaMemoria&, std::string&);

@@ -21,20 +21,8 @@ void Tagger::entrenar(const string& ruta_fich, const unsigned& porc_entrenamient
 void Tagger::calcular_matrices()
 {
     for (const auto& pareja_tags : transition_f)
-        A[pareja_tags.first] = (float) pareja_tags.second / tag_prev_f[pareja_tags.first.derecha];
-    for (const auto& pareja_tags : A)
-        cout << pareja_tags.first.izquierda << " ==> "
-         << pareja_tags.first.derecha << " = " << pareja_tags.second << endl;
-    for (const auto& tag : tag_total_f)
-    {
-        float prob = 0.f;
-        for (const auto& pareja_tags : A)
-        {
-            if (pareja_tags.first.izquierda == tag.first)
-                prob += pareja_tags.second;
-        }
-        cout << prob << endl;
-    }
+        A[pareja_tags.first] = (float) pareja_tags.second / tag_prev_f[pareja_tags.first.izquierda];
+    
 }
 
 /**
