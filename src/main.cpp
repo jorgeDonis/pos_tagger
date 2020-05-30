@@ -4,6 +4,6 @@
 int main()
 {
     Tagger tagger;
-    tagger.entrenar("./resources/corpus_train_ingles.txt", 1);
+    tagger.entrenar("./resources/corpus_train_ingles.txt", 100);
     return 0;
 }

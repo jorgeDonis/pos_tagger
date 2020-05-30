@@ -21,7 +21,9 @@ void Tagger::entrenar(const string& ruta_fich, const unsigned& porc_entrenamient
 void Tagger::calcular_matrices()
 {
     for (const auto& pareja_tags : transition_f)
-        A[pareja_tags.first] = (float) pareja_tags.second / tag_prev_f[pareja_tags.first.izquierda];
+        A[pareja_tags.first] = (double) pareja_tags.second / tag_prev_f[pareja_tags.first.izquierda];
+    for (const auto& pareja_etiquetada : observed_f)
+        B[pareja_etiquetada.first] = (double) pareja_etiquetada.second / tag_total_f[pareja_etiquetada.first.derecha];
     
 }
 

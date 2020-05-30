@@ -54,8 +54,8 @@ class Hasher
 class Tagger
 {
     private:
-        std::unordered_map<ParejaString, float, Hasher> A;
-        std::unordered_map<ParejaString, float, Hasher> B;
+        std::unordered_map<ParejaString, double, Hasher> A;
+        std::unordered_map<ParejaString, double, Hasher> B;
         std::unordered_map<ParejaString, size_t, Hasher> transition_f;
         std::unordered_map<ParejaString, size_t, Hasher> observed_f;
         std::unordered_map<std::string, size_t, Hasher> tag_prev_f;
