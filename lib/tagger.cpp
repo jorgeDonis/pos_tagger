@@ -94,6 +94,7 @@ void Tagger::registrar_token(const unsigned & izquierda, const unsigned & medio,
     tag_prev_f[tag_prev]++;
     observed_f[pareja_token_etiquetado]++;
     tag_total_f[tag]++;
+    tag_tipos_palabra[tag].insert(token);
     tag_prev = tag;
 }
 

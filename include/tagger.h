@@ -5,6 +5,7 @@
 
 #include <vector>
 #include <unordered_map>
+#include <unordered_set>
 #include <string>
 #include <list>
 
@@ -56,6 +57,7 @@ class Hasher
 class Tagger
 {
     private:
+        std::unordered_map<std::string, std::unordered_set<std::string, Hasher>, Hasher> tag_tipos_palabra;
         std::unordered_map<ParejaString, double, Hasher> A;
         std::unordered_map<ParejaString, double, Hasher> B;
         std::unordered_map<ParejaString, size_t, Hasher> transition_f;
