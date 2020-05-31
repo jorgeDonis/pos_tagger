@@ -1,6 +1,7 @@
 #include "tagger.h"
 
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -164,12 +165,32 @@ void Tagger::lattice_trace(Lattice& lattice, list<string>& predicted_tags)
     }
 }
 
+size_t Tagger::c_w_end_t(const string& token, const string& tag, const size_t& l)
+{
+    size_t C = 0;
+    unsigned tam_efectivo_comp = min(l, token.length());
+    for (const string &palabra : tag_tipos_palabra[tag])
+    {
+        unsigned tam_efectivo = min(l, palabra.length());
+        if (!token.compare(token.length() - tam_efectivo_comp, tam_efectivo_comp,
+                          palabra, palabra.length() - tam_efectivo, tam_efectivo))
+            C++;
+    }
+    return C;
+}
+
 double Tagger::p_e_wt(const string& token, const string& tag)
 {
+    size_t L = 3; //TODO prueba con tamaño fijo
+    double alpha = 0.001; // TODO prueba
     unordered_map<ParejaString, double>::iterator it = B.find(ParejaString(token, tag));
     if (it != B.end())
         return it->second;
-    string foo = "";
+    size_t num = c_w_end_t(token, tag, L);
+    size_t den = 0;
+    for (const auto& tag : tag_tipos_palabra)
+        den += c_w_end_t(token, tag.first, L);
+    return alpha * (double) num / den;
 }
 
 void Tagger::etiquetar(const std::list<std::string> &oracion, std::list<std::string> &predicted_tags)

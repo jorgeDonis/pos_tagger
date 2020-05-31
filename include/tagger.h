@@ -79,6 +79,7 @@ class Tagger
         std::unordered_map<ParejaString, size_t> observed_f;
         std::unordered_map<std::string, size_t, Hasher> tag_prev_f;
         std::unordered_map<std::string, size_t, Hasher> tag_total_f;
+        size_t c_w_end_t(const std::string&, const std::string&, const size_t&);
         double p_e_wt(const std::string&, const std::string&);
         void lattice_trace(Lattice&, std::list<std::string>&);
         void lattice_ini(Lattice&, std::list<std::string>::const_iterator&);

@@ -11,7 +11,7 @@ int main()
     tok.PasarAminuscSinAcentos(false);
     list<string> tokens;
     list<string> tags;
-    tok.TokenizarString("My friend runs a lot", tokens);
+    tok.TokenizarString("Suddenly, the car stopped working.", tokens);
     tagger.entrenar("./resources/corpus_train_ingles.txt", 100);
     tagger.etiquetar(tokens, tags);
     list<string>::const_iterator it = tokens.begin();

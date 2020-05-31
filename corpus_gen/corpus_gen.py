@@ -8,7 +8,7 @@ num_words = 0
 for sentence in nltk.corpus.brown.tagged_sents(tagset = 'universal'):
     out_str = str(encoding='iso-8859-1')
     for word in sentence:
-        out_str += word[0] + chr(30) + word[1][:2] + " "
+        out_str += word[0] + chr(30) + word[1] + " "
         num_words += 1
     out_str += "\n"
     file.write(out_str)
