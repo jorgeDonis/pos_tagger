@@ -104,7 +104,7 @@ void Tagger::lattice_ini(Lattice& lattice, list<string>::const_iterator& it_orac
     for (const auto &tag : tag_total_f)
     {
         double f1 = A[ParejaString("inicio", tag.first)];
-        double f2 = B[ParejaString(*it_oracion, tag.first)];
+        double f2 = p_e_wt(*it_oracion, tag.first);
         lattice.getNodo(i, 0).p = f1 * f2;
         lattice.getNodo(i, 0).tag = tag.first;
         i++;
@@ -134,7 +134,7 @@ void Tagger::lattice_fill(Lattice &lattice, list<string>::const_iterator &it_ora
                 }
                 k++;
             }
-            double f = B[ParejaString(*it_oracion, tag.first)];
+            double f = p_e_wt(*it_oracion, tag.first);
             lattice.getNodo(i, j).p = max_p * f;
             lattice.getNodo(i, j).puntero_prev = prev_max;
             lattice.getNodo(i, j).tag = tag.first;
@@ -144,16 +144,9 @@ void Tagger::lattice_fill(Lattice &lattice, list<string>::const_iterator &it_ora
     }
 }
 
-void Tagger::etiquetar(const std::list<std::string> &oracion, std::list<std::string> &predicted_tags)
+void Tagger::lattice_trace(Lattice& lattice, list<string>& predicted_tags)
 {
-    if (oracion.size() < 2)
-        cerr << "ERROR: La oración ha de contener al menos un bigrama" << endl;
-    list<string>::const_iterator it_oracion = oracion.begin();
-    Lattice lattice(tag_total_f.size(), oracion.size());
-    lattice_ini(lattice, it_oracion);
-    lattice_fill(lattice, it_oracion);
-
-    NodoViterbi* nodo_ptr = &lattice.getNodo(0, lattice.cols - 1);
+    NodoViterbi *nodo_ptr = &lattice.getNodo(0, lattice.cols - 1);
     double max_p = 0;
     for (unsigned i = 0; i < lattice.rows; i++)
     {
@@ -169,4 +162,23 @@ void Tagger::etiquetar(const std::list<std::string> &oracion, std::list<std::str
         predicted_tags.push_front(nodo_ptr->tag);
         nodo_ptr = nodo_ptr->puntero_prev;
     }
+}
+
+double Tagger::p_e_wt(const string& token, const string& tag)
+{
+    unordered_map<ParejaString, double>::iterator it = B.find(ParejaString(token, tag));
+    if (it != B.end())
+        return it->second;
+    string foo = "";
+}
+
+void Tagger::etiquetar(const std::list<std::string> &oracion, std::list<std::string> &predicted_tags)
+{
+    if (oracion.size() < 2)
+        cerr << "ERROR: La oración ha de contener al menos un bigrama" << endl;
+    list<string>::const_iterator it_oracion = oracion.begin();
+    Lattice lattice(tag_total_f.size(), oracion.size());
+    lattice_ini(lattice, it_oracion);
+    lattice_fill(lattice, it_oracion);
+    lattice_trace(lattice, predicted_tags);
 }

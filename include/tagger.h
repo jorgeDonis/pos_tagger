@@ -28,21 +28,24 @@ class ParejaString
         bool operator<(const ParejaString& foo) const {
             return izquierda < foo.izquierda;
         }
+        bool operator>(const ParejaString &foo) const
+        {
+            return izquierda < foo.izquierda;
+        }
 };
-
 class Hasher
 {
     private:
-        static const uint32_t Prime = 0x01000193;
-        static const uint32_t Seed = 0x811C9DC5;
-        inline uint32_t fnv1a(const char *text, uint32_t hash = Seed) const
+    public:
+        inline static uint32_t fnv1a(const char *text, uint32_t hash = Seed)
         {
             const unsigned char *ptr = (const unsigned char *)text;
             while (*ptr)
                 hash = (*ptr++ ^ hash) * Prime;
             return hash;
         }
-    public:
+        static const uint32_t Prime = 0x01000193;
+        static const uint32_t Seed = 0x811C9DC5;
         std::size_t operator() (const ParejaString& clave) const
         {
             std::string combi = clave.izquierda + clave.derecha;
@@ -54,16 +57,30 @@ class Hasher
         }
 };
 
+namespace std
+{
+    template <>
+    struct hash<ParejaString>
+    {
+        size_t operator()(const ParejaString &clave) const
+        {
+            std::string combi = clave.izquierda + clave.derecha;
+            return Hasher::fnv1a(combi.c_str());
+        }
+    };
+}
 class Tagger
 {
     private:
         std::unordered_map<std::string, std::unordered_set<std::string, Hasher>, Hasher> tag_tipos_palabra;
-        std::unordered_map<ParejaString, double, Hasher> A;
-        std::unordered_map<ParejaString, double, Hasher> B;
-        std::unordered_map<ParejaString, size_t, Hasher> transition_f;
-        std::unordered_map<ParejaString, size_t, Hasher> observed_f;
+        std::unordered_map<ParejaString, double> A;
+        std::unordered_map<ParejaString, double> B;
+        std::unordered_map<ParejaString, size_t> transition_f;
+        std::unordered_map<ParejaString, size_t> observed_f;
         std::unordered_map<std::string, size_t, Hasher> tag_prev_f;
         std::unordered_map<std::string, size_t, Hasher> tag_total_f;
+        double p_e_wt(const std::string&, const std::string&);
+        void lattice_trace(Lattice&, std::list<std::string>&);
         void lattice_ini(Lattice&, std::list<std::string>::const_iterator&);
         void lattice_fill(Lattice &, std::list<std::string>::const_iterator &);
         void calcular_matrices();
