@@ -5,7 +5,7 @@ OPTIONS= -g -Wall
 DEBUG= #-D DEBUG
 LIBDIR=lib
 INCLUDEDIR=include
-_OBJ= tokenizador.o tagger.o mapa_memoria.o lattice.o
+_OBJ= tokenizador.o tagger.o mapa_memoria.o lattice.o serializador.o
 
 OBJ = $(patsubst %,$(LIBDIR)/%,$(_OBJ))
 
