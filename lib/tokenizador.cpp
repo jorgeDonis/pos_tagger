@@ -570,6 +570,7 @@ inline void Tokenizador::Tokenizar_fichero_simple(const char* mapa_entrada, char
 
 void Tokenizador::TokenizarString(const string & cadena, list<string>& tokens)
 {
+    tokens.clear();
     char* cadena_tokens = TokenizarString(cadena);
     size_t it = 0;
     while (cadena_tokens[it] != '\000')

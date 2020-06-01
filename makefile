@@ -1,7 +1,7 @@
 .PHONY= clean
 
 CC=g++
-OPTIONS= -g -Wall
+OPTIONS= -g -Wall -O3
 DEBUG= #-D DEBUG
 LIBDIR=lib
 INCLUDEDIR=include

@@ -167,36 +167,52 @@ void Tagger::lattice_trace(Lattice& lattice, list<string>& predicted_tags)
 
 size_t Tagger::c_w_end_t(const string& token, const string& tag, const size_t& l)
 {
-    size_t C = 0;
-    unsigned tam_efectivo_comp = min(l, token.length());
-    for (const string &palabra : tag_tipos_palabra[tag])
+    TrioString clave = TrioString(token, tag, to_string(l));
+    unordered_map<TrioString, double>::iterator it = c_w_end_t_res.find(clave);
+    if (it == c_w_end_t_res.end())
     {
-        unsigned tam_efectivo = min(l, palabra.length());
-        if (!token.compare(token.length() - tam_efectivo_comp, tam_efectivo_comp,
-                          palabra, palabra.length() - tam_efectivo, tam_efectivo))
-            C++;
+        size_t C = 0;
+        unsigned tam_efectivo_comp = min(l, token.length());
+        for (const string &palabra : tag_tipos_palabra[tag])
+        {
+            unsigned tam_efectivo = min(l, palabra.length());
+            if (!token.compare(token.length() - tam_efectivo_comp, tam_efectivo_comp,
+                            palabra, palabra.length() - tam_efectivo, tam_efectivo))
+                C++;
+        }
+        it = c_w_end_t_res.emplace(piecewise_construct, forward_as_tuple(clave), forward_as_tuple(C)).first;
     }
-    return C;
+    return it->second;
 }
 
-double Tagger::p_e_wt(const string& token, const string& tag)
+double Tagger::p_e_wt_unknown(const string &token, const string &tag)
 {
-    size_t L = 3; //TODO prueba con tamaño fijo
-    double alpha = 0.001; // TODO prueba
+    double sigma = 0;
+    for (unsigned l = 1; l <= 5; l++)
+    {
+        size_t num = c_w_end_t(token, tag, l);
+        size_t den = 0;
+        for (const auto &tag : tag_tipos_palabra)
+            den += c_w_end_t(token, tag.first, l);
+        if (den != 0)
+            sigma += alpha[l - 1] * (double)num / den;
+    }
+    return sigma;
+}
+
+double Tagger::p_e_wt(const string &token, const string &tag)
+{
     unordered_map<ParejaString, double>::iterator it = B.find(ParejaString(token, tag));
     if (it != B.end())
         return it->second;
-    size_t num = c_w_end_t(token, tag, L);
-    size_t den = 0;
-    for (const auto& tag : tag_tipos_palabra)
-        den += c_w_end_t(token, tag.first, L);
-    return alpha * (double) num / den;
+    return p_e_wt_unknown(token, tag);
 }
 
 void Tagger::etiquetar(const std::list<std::string> &oracion, std::list<std::string> &predicted_tags)
 {
     if (oracion.size() < 2)
         cerr << "ERROR: La oración ha de contener al menos un bigrama" << endl;
+    predicted_tags.clear();
     list<string>::const_iterator it_oracion = oracion.begin();
     Lattice lattice(tag_total_f.size(), oracion.size());
     lattice_ini(lattice, it_oracion);
